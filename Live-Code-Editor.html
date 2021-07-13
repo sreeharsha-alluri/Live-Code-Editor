@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Live Code Editor</title>
+</head>
+<link rel = "stylesheet" href="css/Live-Code-Editor.css">
+<script>
+	function refresh()
+	{
+		var editor_value=document.getElementById('editor-textarea').value;
+		document.getElementById('viewer').srcdoc=editor_value;
+	}
+</script>
+<body>
+	<header>
+<h1 id="heading">Live Code Editor</h1>
+</header>
+<div class="main">
+
+	<textarea onkeyup="refresh()" id="editor-textarea" placeholder="Write your code here....."></textarea>
+    <iframe id="viewer"></iframe>
+</div>
+<footer>
+<ul>
+			
+			<li><a href="logout.jsp">LOG OUT</a></li>
+</ul>
+</footer>
+</body>
+</html>
