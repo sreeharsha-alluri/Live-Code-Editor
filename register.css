@@ -1,0 +1,82 @@
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0rem 5rem;
+  transition: all 0.2s 0.7s;
+  overflow: hidden;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+input[type=text], select{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  
+}
+input[type=password], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  
+}
+input[type=submit]{
+  background-color: lightblue;
+  border: 2px solid black;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+input[type=submit]:hover {
+   background-color: grey;
+   color: white;
+}
+input[type=reset]{
+  background-color: lightblue;
+  border:2px solid black;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s; 
+}
+input[type=reset]:hover {
+   background-color: grey;
+   color: white;
+}
+body{
+background-color: lightblue;
+font-family: Lucida Calligraphy;
+font-style: oblique;
+}
+a
+{
+    text-decoration:none;
+    background-color:#000000;
+    color: white;
+    display: block;
+    padding: 8px 16px;
+}
+a:hover
+{
+   background-color: grey;
+   color: white;
+}
+
+.form-row input::placeholder {
+font-family: Lucida Calligraphy;
+font-style: oblique;
+}
